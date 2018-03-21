@@ -1,0 +1,59 @@
+.slide-cl
+	padding: 0
+	.middle
+		max-width: 100%
+		position: relative
+	&__info-left
+		width: 34.9%
+		height: 100%
+		bottom: 0
+		position: absolute
+		top: 0
+		z-index: 98
+		left: 0
+		background: $rgb-base
+		color: #fff
+		padding: 1rem
+		box-sizing: border-box
+		@extend .df-jc
+		flex-direction: column
+		align-content: center
+	&__box
+		img
+			margin: 0
+	&_info-block
+		position: absolute
+		z-index: 98
+		top: calc(100% / 2.3)
+		bottom: 0
+		left: 34.3%
+		h2
+			font:
+				size: 2rem
+			padding-left: 1rem
+	&_info-text
+		@extend .df-jc
+		flex-direction: column
+		
+		padding: .4rem
+		margin-top: 1rem
+		a
+			margin: .3rem 0
+			background: $color-ww
+			padding: .4rem 1rem .4rem 1rem
+			border-bottom: 4px solid #000
+			text-transform: capitalize
+			font:
+				size: 1.33rem
+	#slide-cl__id
+		@extend .df-jc
+		justify-content: space-between
+		align-items: baseline
+		align-content: space-between
+		a 
+			text-align: center
+			padding: 1rem 2rem
+			background: $color-b2
+			@extend .fix_el
+			&.active
+				background: $color-blue

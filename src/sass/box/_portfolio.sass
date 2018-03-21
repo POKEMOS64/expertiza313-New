@@ -1,0 +1,40 @@
+.portfolio
+	+bg(bg_catalog,jpg)
+	background-repeat: repeat
+	background-size: auto
+	.owl-carousel
+		max-width: 80%
+		margin: 0 auto
+		.item
+			@extend .df-jc
+			justify-content: space-between
+			background: #ffffff
+			border-right: 4px solid $color-blue
+			border-left: 4px solid $color-blue
+			&>div
+				max-width: 60%
+				&:nth-child(1)
+					width: 50%
+					margin-right: 3rem
+			img
+				margin: 0
+	&__info-block
+		@extend .df-jc
+		flex-direction: column
+		padding: 1rem
+		box-sizing: border-box
+		align-items: flex-start
+		.h2
+			margin-bottom: 1rem
+			text-transform: uppercase
+		p
+			margin: 1rem 0
+			&.strong
+				font:
+					weight: bold
+		a 
+			&.button
+				background: $color-blue
+				padding: .3rem 1rem
+				width: 100%
+				text-align: center
